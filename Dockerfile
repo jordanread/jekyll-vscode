@@ -1,6 +1,5 @@
 FROM ruby:3.2-slim
 LABEL maintainer "Jordon Bedwell <jordon@envygeeks.io>"
-COPY copy /
 
 #
 # EnvVars

@@ -1,14 +1,13 @@
 {
   "name": "VSCode Jekyll Container",
-  "image": "jekyll/jekyll:pages",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/site,type=bind,consistency=cached",
-  "workspaceFolder": "/site",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
   "forwardPorts": [4000, 35729],
   "portsAttributes": {
     "4000": { "label": "Jekyll Site" },
     "35729": { "label": "LiveReload" }
   },
-  "postCreateCommand": "bundle install",
   "customizations": {
     "vscode": {
       "extensions": [
