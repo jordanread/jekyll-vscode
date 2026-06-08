@@ -40,7 +40,7 @@ Steps
 - In VS Code's Ports view (or your terminal output) note the port Jekyll is serving on (default 4000). Open http://localhost:4000 (or the forwarded port shown) in your host browser.
 
 Notes and tips
-- Files created inside the container (like my-site) persist in the repository workspace on your machine.
+- Files created inside the container (like my-site) persist in the repository workspace on your machine, but they are owned by root.
 
 - If you encounter permission or bundler issues, try `gem install bundler` then `bundle install` from the container terminal.
 
